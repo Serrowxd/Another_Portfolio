@@ -1,16 +1,52 @@
 html {
   font-family: 'Maven Pro', sans-serif;
+  background-color: #2f2f2f;
 }
 div {
   display: flex;
 }
+body {
+  max-width: 1920px;
+}
+.navigation {
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  padding-top: 1rem;
+  color: white;
+}
+.navigation .nav_head {
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+.navigation .nav_items {
+  width: 20%;
+  justify-content: space-around;
+}
+.navigation p {
+  font-size: 1.5rem;
+  transition: 0.25s;
+}
+.navigation p:hover {
+  color: #18d7dd;
+  cursor: pointer;
+}
 .jumbo {
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
   background-color: #2f2f2f;
+  color: white;
+  background-image: url(../assets/bkgtest2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .jumbo h1 {
-  font-size: 8rem;
-  color: white;
+  font-size: 12rem;
+}
+.jumbo h2 {
+  font-size: 3rem;
+  margin-top: 3%;
 }
