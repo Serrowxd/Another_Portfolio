@@ -2,13 +2,9 @@
 $(document).ready(() => {
   window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-      $('.navigation')
-        .removeClass('yeah')
-        .addClass('working');
+      $('.navigation').addClass('scrolled');
     } else {
-      $('.navigation')
-        .removeClass('working')
-        .addClass('yeah');
+      $('.navigation').removeClass('scrolled');
     }
   });
 });
