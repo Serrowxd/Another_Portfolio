@@ -72,8 +72,6 @@ class App extends Component {
 
   // I'm so sorry this exists ;-;
 
-  compRender;
-
   render() {
     return (
       <div className="main_container">

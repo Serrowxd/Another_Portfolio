@@ -1,10 +1,12 @@
 html {
   font-family: 'Maven Pro', sans-serif;
-  background-color: #2f2f2f;
+  background-color: #232323;
   color: white;
 }
 div {
   display: flex;
+  transition: 0.25s;
+  animation: fadein 1s forwards;
 }
 body {
   max-width: 1920px;
@@ -17,6 +19,27 @@ a {
   width: 100%;
   height: 100vh;
 }
+@keyframes navigation_smol {
+  0% {
+    display: none;
+    opacity: 0;
+    padding: 0;
+    visibility: none;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    padding: 1rem;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navigation {
   width: 100%;
   position: absolute;
@@ -25,6 +48,7 @@ a {
   height: 2.5rem;
   align-content: center;
   transition: 0.5s;
+  z-index: 1;
   color: white;
 }
 .navigation .nav_head {
@@ -43,10 +67,6 @@ a {
   color: #18d7dd;
   cursor: pointer;
 }
-.scrolled {
-  position: fixed;
-  background-color: rgba(47, 47, 47, 0.7);
-}
 .jumbo {
   width: 100%;
   justify-content: center;
@@ -54,6 +74,7 @@ a {
   flex-direction: column;
   height: 100vh;
   background-color: #2f2f2f;
+  opacity: 1;
   color: white;
   background-image: url(../assets/bkgtest2.png);
   background-attachment: fixed;
@@ -94,6 +115,7 @@ a {
   background-color: rgba(47, 47, 47, 0.7);
   height: 60%;
   transition: 0.25s;
+  border-radius: 0 2rem 2rem 0;
   animation: navigation_smol 1s forwards;
 }
 .smol_nav:hover {
@@ -109,6 +131,7 @@ a {
 .smol_buttons p {
   transition: 0.25s;
   padding: 0.5rem;
+  border-radius: 2rem;
 }
 .smol_buttons p:hover {
   background-color: white;
@@ -130,16 +153,20 @@ a {
 .hidden_nav p {
   display: none;
 }
-@keyframes navigation_smol {
-  0% {
-    display: none;
-    opacity: 0;
-    padding: 0;
-    visibility: none;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-    padding: 1rem;
-  }
+.projects_container {
+  width: 100%;
+  height: 75%;
+  margin-top: 4rem;
+  align-self: center;
+  flex-wrap: wrap;
+  padding: 5.5rem;
+  justify-content: space-around;
+  position: relative;
+  overflow: auto;
+  background-color: #9e9e9e;
+}
+.projects_container img {
+  width: auto;
+  padding-bottom: 2rem;
+  height: 25rem;
 }
