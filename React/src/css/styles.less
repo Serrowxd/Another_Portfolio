@@ -37,6 +37,7 @@ a {
 // Colors
 @black: #2f2f2f;
 @blacker: #232323;
+@matblack: #424242;
 @blackOP70: rgba(47, 47, 47, 0.7);
 @white: white;
 @blue: rgb(24, 215, 221);
@@ -116,6 +117,11 @@ a {
       cursor: pointer;
     }
   }
+}
+
+.scrolled {
+  position: fixed;
+  background-color: @blackOP70;
 }
 
 // ***
@@ -240,17 +246,17 @@ a {
 
 .projects_container {
   width: 100%;
-  height: 75%;
-  margin-top: 4rem;
+  height: 85%;
+  margin-top: 2rem;
   align-self: center;
   flex-wrap: wrap;
-  padding: 5.5rem;
+  padding: 0.5rem;
   justify-content: space-around;
+  align-items: center;
+  padding-top: 0;
+  // padding-left: 5.5rem;
 
-  position: relative;
-  overflow: auto;
-
-  background-color: @white500;
+  // background-color: @matblack;
 
   img {
     width: auto;
