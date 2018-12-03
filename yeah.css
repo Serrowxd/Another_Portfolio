@@ -1,0 +1,33 @@
+::-moz-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-moz-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-moz-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 28px;
+}
+::-moz-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-moz-scrollbar-thumb:active {
+  background: #000000;
+}
+::-moz-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-moz-scrollbar-track:hover {
+  background: #666666;
+}
+::-moz-scrollbar-track:active {
+  background: #333333;
+}
+::-moz-scrollbar-corner {
+  background: transparent;
+}
