@@ -160,7 +160,6 @@ a {
 .projects_container {
   width: 100%;
   height: 85%;
-  margin-top: 2rem;
   align-self: center;
   flex-wrap: wrap;
   padding: 0.5rem;
