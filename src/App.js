@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Landing, About, Social, Projects, Extra } from './reducer';
+import React, { Component } from "react";
+import { Landing, About, Social, Projects, Extra } from "./reducer";
 
 class App extends Component {
   constructor() {
@@ -16,7 +16,7 @@ class App extends Component {
       //     renderE={this.comprenderE}
       //   />
       // ),
-      render: <Projects />,
+      render: <Projects />
 
       // Development State
     };
@@ -24,7 +24,7 @@ class App extends Component {
 
   // Navigation
   componentDidMount() {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const isTop = window.scrollY < 100;
       if (isTop !== this.state.isTop) {
         this.sideNavCheckerF();
@@ -37,7 +37,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.navScroll);
+    window.removeEventListener("scroll", this.navScroll);
   }
 
   navScroll = () => {
@@ -78,9 +78,9 @@ class App extends Component {
           renderA={this.compRenderA}
           renderS={this.compRenderS}
           renderP={this.compRenderP}
-          renderE={this.comprenderE}
+          renderE={this.compRenderE}
         />
-      ),
+      )
     });
   };
 
@@ -113,7 +113,7 @@ class App extends Component {
       <div className="main_container">
         {/* Navigation */}
         <div
-          className={this.state.scrolled ? 'navigation scrolled' : 'navigation'}
+          className={this.state.scrolled ? "navigation scrolled" : "navigation"}
         >
           <div className="nav_head">
             <p onClick={this.clickHandler}>K/J</p>
@@ -129,7 +129,7 @@ class App extends Component {
         {this.state.render}
 
         {/* Left-Nav */}
-        <div className={this.state.button ? 'smol_nav' : 'hidden_nav'}>
+        <div className={this.state.button ? "smol_nav" : "hidden_nav"}>
           <div className="smol_buttons">
             <p onClick={this.setHome}>Home</p>
             <p onClick={this.compRender.bind(this, <About />)}>About</p>
