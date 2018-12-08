@@ -1,15 +1,13 @@
 import React, { Fragment } from 'react';
 
-const About = () => {
+const Life = () => {
   return (
     <Fragment>
       <div className="temporary background">
-        <div>
-          <h1>Henlo (OvO") I display nothing about me!</h1>
-        </div>
+        <h1>Henlo (OvO") I display nothing about my life!</h1>
       </div>
     </Fragment>
   );
 };
 
-export default About;
+export default Life;

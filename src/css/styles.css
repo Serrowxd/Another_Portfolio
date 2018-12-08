@@ -1,5 +1,5 @@
 html {
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   background-color: #232323;
   color: white;
 }
@@ -395,4 +395,29 @@ a {
   align-items: center;
   color: white;
   font-size: 5rem;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/tempbkgc.png);
+  align-items: center;
+  justify-content: center;
+}
+.contact_section {
+  flex-direction: column;
+  width: 70%;
+  height: 50%;
+  justify-content: space-around;
+  text-align: center;
+}
+.contact_section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+.contact_section form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
 }

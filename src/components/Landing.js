@@ -11,9 +11,9 @@ const Landing = props => {
         {/* Jumbo Nav */}
         <div className="jumbo_nav">
           <p onClick={props.renderA}>About</p>
-          <p onClick={props.renderS}>Social</p>
           <p onClick={props.renderP}>Projects</p>
-          <p onClick={props.renderE}>Extra</p>
+          <p onClick={props.renderL}>Life</p>
+          <p onClick={props.renderC}>Contact</p>
         </div>
       </div>
     </Fragment>
