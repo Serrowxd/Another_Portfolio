@@ -19,6 +19,9 @@ a {
   width: 100%;
   height: 100vh;
 }
+.hide_nav {
+  visibility: hidden;
+}
 @keyframes navigation_smol {
   0% {
     display: none;
@@ -225,8 +228,8 @@ a {
 }
 .projects_container {
   width: 100%;
-  height: 85%;
-  margin-top: 2rem;
+  height: 100%;
+  margin-top: 8rem;
   align-self: center;
   flex-wrap: wrap;
   padding: 0.5rem;
@@ -272,7 +275,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -420,4 +423,61 @@ a {
   padding: 0.5rem;
   font-size: 1rem;
   text-align: center;
+}
+.about_container {
+  width: 80%;
+  height: 90%;
+  justify-content: center;
+}
+.about_text,
+.about_img {
+  flex-direction: column;
+  width: 50%;
+  padding: 3rem;
+}
+.about_text {
+  height: 80%;
+  align-self: center;
+  justify-content: center;
+}
+.about_text h1 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.about_text p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.about_text h4 {
+  align-self: center;
+  margin: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #18d7dd;
+}
+.about_img {
+  height: 100%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.about_img img {
+  width: 25rem;
+  height: auto;
+  border-radius: 100%;
+  transition: 0.25s;
+}
+.about_img h1 {
+  padding-top: 1rem;
+  margin-bottom: -4rem;
+  font-size: 2rem;
+}
+.embeded_vids {
+  width: 100%;
+  justify-content: space-around;
+}
+.embeded_vids iframe {
+  width: 310px;
+  height: 170px;
 }

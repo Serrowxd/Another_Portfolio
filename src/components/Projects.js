@@ -16,7 +16,7 @@ import ten from '../assets/projects/xuen.png';
 import eleven from '../assets/projects/anotherportf.png';
 import twelve from '../assets/projects/yas.png';
 
-const About = props => {
+const Projects = props => {
   return (
     <Fragment>
       <div className="projects_container">
@@ -26,6 +26,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={two}
@@ -33,6 +38,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={three}
@@ -40,6 +50,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={four}
@@ -47,6 +62,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={five}
@@ -54,6 +74,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={six}
@@ -61,6 +86,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={seven}
@@ -68,6 +98,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={eight}
@@ -75,6 +110,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={nine}
@@ -82,6 +122,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={ten}
@@ -89,6 +134,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={eleven}
@@ -96,6 +146,11 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
         <ProjectConst
           img={twelve}
@@ -103,10 +158,15 @@ const About = props => {
           text='Henlo (OvO")'
           text_two="Test"
           text_three="Testing Twice"
+          modal_1="yeet one"
+          modal_2="yeet two"
+          modal_3="yeet three"
+          link_hub=""
+          link_dep=""
         />
       </div>
     </Fragment>
   );
 };
 
-export default About;
+export default Projects;

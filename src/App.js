@@ -18,7 +18,7 @@ class App extends Component {
       // ),
 
       // Development State
-      render: <Contact />,
+      render: <Projects />,
     };
   }
 
@@ -114,6 +114,7 @@ class App extends Component {
         {/* Navigation */}
         <div
           className={this.state.scrolled ? 'navigation scrolled' : 'navigation'}
+          id="nav"
         >
           <div className="nav_head">
             <p onClick={this.clickHandler}>K/J</p>
