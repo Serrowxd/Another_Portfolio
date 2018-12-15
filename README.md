@@ -14,3 +14,9 @@ Lookit that, I'm making ANOTHER portfolio!
 
 - Reactive
 - Scrolling anywhere on the page causes the show-nav to fire (at lower reactive levels)
+
+## Ideas
+
+- Projects Section - Separate them out into two categories?
+  - Projects I've contributed to
+  - Projects I've created

@@ -6,6 +6,7 @@ const Contact = () => {
       <div className="background">
         <div className="contact_section">
           <h1>Let's do work (OvO")</h1>
+          <p>!! This needs to be refactored into something more stylish !!</p>
 
           <form>
             <input placeholder="OwO" />

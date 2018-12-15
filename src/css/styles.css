@@ -505,3 +505,6 @@ button {
   width: 310px;
   height: 170px;
 }
+.life {
+  flex-direction: column;
+}

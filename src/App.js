@@ -5,20 +5,21 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      button: false,
+      // SideNavigation === Button
+      button: true,
       isTop: true,
       scrolled: false,
-      render: (
-        <Landing
-          renderA={this.compRenderA}
-          renderP={this.compRenderP}
-          renderL={this.compRenderL}
-          renderC={this.compRenderC}
-        />
-      ),
+      // render: (
+      //   <Landing
+      //     renderA={this.compRenderA}
+      //     renderP={this.compRenderP}
+      //     renderL={this.compRenderL}
+      //     renderC={this.compRenderC}
+      //   />
+      // ),
 
       // Development State
-      // render: <Projects />,
+      render: <Life />,
     };
   }
 
@@ -36,6 +37,7 @@ class App extends Component {
     });
   }
 
+  // Navigation Display/Hide
   componentWillUnmount() {
     window.removeEventListener('scroll', this.navScroll);
   }
@@ -50,6 +52,7 @@ class App extends Component {
     this.setState({ button: !state });
   };
 
+  // Component Navigation Render Function
   compRender(compName, e) {
     this.setState({ render: compName });
   }
@@ -68,10 +71,9 @@ class App extends Component {
     }
   };
 
+  // Sets Home on Nav Click
   setHome = () => {
-    if (this.state.button === true) {
-      this.setState({ button: false });
-    }
+    this.sideNavCheckerF();
     this.setState({
       render: (
         <Landing
@@ -105,8 +107,6 @@ class App extends Component {
     this.sideNavChecker();
     this.setState({ render: <Contact /> });
   };
-
-  // I'm so sorry this exists ;-;
 
   render() {
     return (
