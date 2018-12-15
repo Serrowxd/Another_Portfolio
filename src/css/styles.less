@@ -34,6 +34,22 @@ a {
   visibility: hidden;
 }
 
+button {
+  border: none;
+  border-radius: 2px;
+  width: 10rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  // background-color: rgba(149, 33, 243, 0.91);
+  background-color: @orange;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+
 // ***
 // Mixins
 // ***
@@ -45,6 +61,7 @@ a {
 @blackOP70: rgba(47, 47, 47, 0.7);
 @white: white;
 @blue: rgb(24, 215, 221);
+@orange: rgb(244, 155, 66);
 @white500: #9e9e9e;
 
 // Breakpoints
@@ -360,7 +377,8 @@ a {
       opacity: 0.2;
     }
 
-    h1 {
+    h1,
+    h2 {
       visibility: visible;
       margin-bottom: 1rem;
     }
@@ -368,11 +386,20 @@ a {
     cursor: pointer;
   }
 
-  h1 {
+  h1,
+  h2 {
     visibility: hidden;
-    font-size: 4rem;
-    color: @blue;
     transition: 0.25s;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    padding-bottom: 5rem;
+    color: @orange;
+  }
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -426,6 +453,7 @@ a {
   h1 {
     font-size: 7rem;
     margin-bottom: 0;
+    color: @orange;
   }
 
   h2 {

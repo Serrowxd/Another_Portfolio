@@ -22,6 +22,20 @@ a {
 .hide_nav {
   visibility: hidden;
 }
+button {
+  border: none;
+  border-radius: 2px;
+  width: 10rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  align-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #f49b42;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
 @keyframes navigation_smol {
   0% {
     display: none;
@@ -256,15 +270,24 @@ a {
 .project_div:hover img {
   opacity: 0.2;
 }
-.project_div:hover h1 {
+.project_div:hover h1,
+.project_div:hover h2 {
   visibility: visible;
   margin-bottom: 1rem;
 }
-.project_div h1 {
+.project_div h1,
+.project_div h2 {
   visibility: hidden;
-  font-size: 4rem;
-  color: #18d7dd;
   transition: 0.25s;
+}
+.project_div h1 {
+  font-size: 4.5rem;
+  padding-bottom: 5rem;
+  color: #f49b42;
+}
+.project_div h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
 }
 .project_text {
   flex-direction: column;
@@ -310,6 +333,7 @@ a {
 .modal_col h1 {
   font-size: 7rem;
   margin-bottom: 0;
+  color: #f49b42;
 }
 .modal_col h2 {
   font-size: 2rem;

@@ -23,144 +23,117 @@ const Projects = props => {
         <ProjectConst
           img={one}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Once Daily"
+          text_two="HTML / JQuery"
+          text_three="LESS"
+          text_four=""
+          modal_1="A new website, every day"
+          modal_2="JavaScript"
+          modal_3="HTML, LESS, JQuery"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={two}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="I Hate LFG"
+          text_two="React/Redux"
+          text_three="Styled-Comps/LESS"
+          text_four="NodeJS/Express"
+          modal_1="Not a fan of group finder? We can help"
+          modal_2="JavaScript"
+          modal_3="React, LESS, Styled-Components, NodeJS"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={three}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Mandracchia Law"
+          text_two="React"
+          text_three="Styled-Comps/LESS"
+          text_four=""
+          modal_1="Freelance Attorny Page"
+          modal_2="JavaScript"
+          modal_3="React, LESS, Styled-Components"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={four}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Noted"
+          text_two="React/Redux"
+          text_three="Styled-Comps/LESS"
+          text_four="NodeJS"
+          modal_1="Note taking, redefined"
+          modal_2="JavaScript"
+          modal_3="React, LESS, Styled-Components, NodeJS"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={five}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Portfolio (Old)"
+          text_two="React"
+          text_three="LESS"
+          text_four=""
+          modal_1="Previous Portfolio"
+          modal_2="JavaScript"
+          modal_3="React, LESS"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={six}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Portfolio (Unf)"
+          text_two="HTML/JQuery"
+          text_three="LESS"
+          text_four=""
+          modal_1="First Portfolio Attempt"
+          modal_2="JavaScript"
+          modal_3="HTML, LESS, JQuery"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={seven}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
-          link_hub=""
-          link_dep=""
-        />
-        <ProjectConst
-          img={eight}
-          alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Rcruit"
+          text_two="React"
+          text_three="Styled-Components"
+          text_four="NodeJS"
+          modal_1="Tinder for Job Searching (Capstone)"
+          modal_2="JavaScript"
+          modal_3="React, Styled-Components, NodeJS"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={nine}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
-          link_hub=""
-          link_dep=""
-        />
-        <ProjectConst
-          img={ten}
-          alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="SinForsaken"
+          text_two="HTML/JQuery"
+          text_three="LESS"
+          text_four=""
+          modal_1="SinForsaken Guild Website"
+          modal_2="JavaScript"
+          modal_3="HTML, LESS, JQuery"
           link_hub=""
           link_dep=""
         />
         <ProjectConst
           img={eleven}
           alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
-          link_hub=""
-          link_dep=""
-        />
-        <ProjectConst
-          img={twelve}
-          alt="yeet"
-          text='Henlo (OvO")'
-          text_two="Test"
-          text_three="Testing Twice"
-          modal_1="yeet one"
-          modal_2="yeet two"
-          modal_3="yeet three"
+          text="Portfolio"
+          text_two="React"
+          text_three="LESS"
+          text_four=""
+          modal_1="My Portfolio - You're here now!"
+          modal_2="JavaScript"
+          modal_3="React, LESS"
           link_hub=""
           link_dep=""
         />

@@ -33,8 +33,9 @@ class ProjectConst extends Component {
           <div onClick={this.modalShow} className="project_div">
             <div className="project_text">
               <h1> {this.props.text} </h1>
-              <h1> {this.props.text_two} </h1>
-              <h1> {this.props.text_three} </h1>
+              <h2> {this.props.text_two} </h2>
+              <h2> {this.props.text_three} </h2>
+              <h2> {this.props.text_four} </h2>
             </div>
             <img src={this.props.img} alt={this.props.alt} />
           </div>
