@@ -5,20 +5,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      button: true,
+      button: false,
       isTop: true,
       scrolled: false,
-      // render: (
-      //   <Landing
-      //     renderA={this.compRenderA}
-      //     renderP={this.compRenderP}
-      //     renderL={this.compRenderL}
-      //     renderC={this.compRenderC}
-      //   />
-      // ),
+      render: (
+        <Landing
+          renderA={this.compRenderA}
+          renderP={this.compRenderP}
+          renderL={this.compRenderL}
+          renderC={this.compRenderC}
+        />
+      ),
 
       // Development State
-      render: <Projects />,
+      // render: <Projects />,
     };
   }
 
