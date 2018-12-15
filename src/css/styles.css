@@ -147,7 +147,7 @@ button {
   transition: 0.25s;
 }
 .navigation p:hover {
-  color: #18d7dd;
+  color: #f49b42;
   cursor: pointer;
 }
 .scrolled {
@@ -188,7 +188,7 @@ button {
   transition: 0.25s;
 }
 .jumbo_nav p:hover {
-  color: #18d7dd;
+  color: #f49b42;
   cursor: pointer;
 }
 .smol_nav {
@@ -222,7 +222,7 @@ button {
 }
 .smol_buttons p:hover {
   background-color: white;
-  color: #18d7dd;
+  color: #f49b42;
   cursor: pointer;
 }
 .hidden_nav {
@@ -478,7 +478,7 @@ button {
   font-style: italic;
   font-weight: bold;
   font-size: 1.1rem;
-  color: #18d7dd;
+  color: #f49b42;
 }
 .about_img {
   height: 100%;
