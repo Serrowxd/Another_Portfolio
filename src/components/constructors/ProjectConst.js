@@ -5,6 +5,7 @@ class ProjectConst extends Component {
     super(props);
     this.state = {
       popover: true,
+      notes: true,
     };
   }
 
@@ -46,7 +47,11 @@ class ProjectConst extends Component {
             </button>
             <div className="modal_row">
               <div className="modal_col">
-                <img src={this.props.img} alt={this.props.alt} />
+                {this.state.notes ? (
+                  <img src={this.props.img} alt={this.props.alt} />
+                ) : (
+                  <h1> Henlo (OvO") </h1>
+                )}
               </div>
               <div className="modal_col">
                 <h1>{this.props.text}</h1>
@@ -69,6 +74,7 @@ class ProjectConst extends Component {
                   >
                     <button>Deployment</button>
                   </a>
+                  <button>Project Notes</button>
                 </div>
               </div>
             </div>

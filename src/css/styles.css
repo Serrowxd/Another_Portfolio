@@ -329,6 +329,7 @@ button {
   width: 50%;
   justify-content: space-around;
   align-items: center;
+  min-height: 100%;
 }
 .modal_col h1 {
   font-size: 7rem;
@@ -343,7 +344,8 @@ button {
 }
 .modal_col img {
   width: auto;
-  height: 40rem;
+  height: 30rem;
+  padding-bottom: 2rem;
 }
 .modal_col .nested {
   width: 70%;

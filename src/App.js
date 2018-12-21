@@ -19,7 +19,7 @@ class App extends Component {
       // ),
 
       // Development State
-      render: <Life />,
+      render: <Projects />,
     };
   }
 
