@@ -20,5 +20,3 @@ Lookit that, I'm making ANOTHER portfolio!
 - Projects Section - Separate them out into two categories?
   - Projects I've contributed to
   - Projects I've created
-
-!! Testing Git Push from New Computer !!
