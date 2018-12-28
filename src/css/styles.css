@@ -512,7 +512,7 @@ button {
 @media (max-width: 1199px) {
   .smol_nav {
     width: 2.75rem;
-    height: 100%;
+    height: 96.4%;
     border-radius: 0;
   }
   .smol_buttons {
