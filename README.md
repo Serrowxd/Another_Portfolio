@@ -12,7 +12,9 @@ Lookit that, I'm making ANOTHER portfolio!
 
 ## TO-DO
 
-- Reactive
+- Reactive ~~
+  - About height is non-effective in some cases
+  - Phones have slight overflow issues
 - Scrolling anywhere on the page causes the show-nav to fire (at lower reactive levels)
 
 ## Ideas

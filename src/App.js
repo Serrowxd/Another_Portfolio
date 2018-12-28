@@ -6,20 +6,20 @@ class App extends Component {
     super();
     this.state = {
       // SideNavigation === Button
-      button: true,
+      button: false,
       isTop: true,
       scrolled: false,
-      // render: (
-      //   <Landing
-      //     renderA={this.compRenderA}
-      //     renderP={this.compRenderP}
-      //     renderL={this.compRenderL}
-      //     renderC={this.compRenderC}
-      //   />
-      // ),
+      render: (
+        <Landing
+          renderA={this.compRenderA}
+          renderP={this.compRenderP}
+          renderL={this.compRenderL}
+          renderC={this.compRenderC}
+        />
+      ),
 
       // Development State
-      render: <Contact />,
+      // render: <Contact />,
     };
   }
 
