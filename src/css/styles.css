@@ -683,3 +683,8 @@ button {
     font-size: 1rem;
   }
 }
+@media (max-width: 480px) {
+  .about_text {
+    padding-left: 6rem;
+  }
+}
