@@ -19,7 +19,7 @@ class App extends Component {
       // ),
 
       // Development State
-      render: <Projects />,
+      render: <Contact />,
     };
   }
 
@@ -112,26 +112,15 @@ class App extends Component {
     return (
       <div className="main_container">
         {/* Navigation */}
-        <div
-          className={this.state.scrolled ? 'navigation scrolled' : 'navigation'}
-          id="nav"
-        >
+        <div className={this.state.scrolled ? 'navigation scrolled' : 'navigation'} id="nav">
           <div className="nav_head">
             <p onClick={this.clickHandler}>K/J</p>
           </div>
           <div className="nav_items">
-            <a
-              href="https://github.com/Serrowxd"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/Serrowxd" target="_blank" rel="noopener noreferrer">
               <p>Github</p>
             </a>
-            <a
-              href="https://www.linkedin.com/in/serrowxd/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/serrowxd/" target="_blank" rel="noopener noreferrer">
               <p>LinkedIn</p>
             </a>
             <p>Resume</p>
