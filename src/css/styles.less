@@ -81,6 +81,8 @@ button {
 @430: ~'(max-width: 430px)';
 @smallphone: ~'(max-width: 320px)';
 
+// !!! Breakpoints are handled at the bottom of the document !!!
+
 // ***
 // Keyframe Animations
 // ***
@@ -693,8 +695,10 @@ button {
 // Media Breakpoints
 // ***
 
-// !!! Note that these are based on screen, not component !!!
+// !!! Note that these are based on navigated component !!!
+// !!! Refer to comments to see component !!!
 
+// ***
 // Side Navigation (smol_nav)
 @media @widescreen {
   .smol_nav {
@@ -709,6 +713,7 @@ button {
   }
 }
 
+// ***
 // Landing
 @media @widescreen {
   .jumbo {
@@ -814,8 +819,8 @@ button {
   }
 }
 
+// ***
 // About
-
 @media @1700 {
   .about_text {
     justify-content: flex-start;
