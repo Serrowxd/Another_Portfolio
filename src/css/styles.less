@@ -69,6 +69,7 @@ button {
 @white500: #9e9e9e;
 
 // Breakpoints
+@1850: ~'(max-width: 1850px)';
 @1700: ~'(max-width: 1700px)';
 @ultrawidescreen: ~'(max-width: 1600px)';
 @semiwidescreen: ~'(max-width: 1400px)';
@@ -502,6 +503,23 @@ button {
     img {
       height: 30rem;
     }
+
+    .nested {
+      width: 80%;
+    }
+  }
+
+  @media @widescreen {
+    .nested {
+      width: 100%;
+    }
+  }
+
+  @media @desktop {
+    .nested a,
+    button {
+      width: 8rem;
+    }
   }
 
   @media @tablet {
@@ -525,6 +543,20 @@ button {
 
     img {
       display: none;
+    }
+  }
+
+  @media @615 {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1.25rem;
     }
   }
 
@@ -553,9 +585,25 @@ button {
   width: 2.5rem;
   z-index: 2;
 
+  @media @1850 {
+    margin-right: 6rem;
+  }
+
+  @media @1700 {
+    margin-right: 5rem;
+  }
+
+  @media @widescreen {
+    margin-right: 3rem;
+  }
+
   @media @desktop {
-    margin-right: 4rem;
-    width: 2rem;
+    margin-right: 2rem;
+    width: 2.5rem;
+  }
+
+  @media @tablet {
+    margin-top: 3rem;
   }
 
   @media @phone {
@@ -666,7 +714,6 @@ button {
 
   h1 {
     padding-top: 1rem;
-    margin-bottom: -4rem;
     font-size: 2rem;
   }
 }
@@ -680,6 +727,7 @@ button {
   iframe {
     width: 310px;
     height: 170px;
+    margin: 0.5rem;
   }
 }
 
@@ -923,5 +971,29 @@ button {
 @media @phone {
   .about_text {
     padding-left: 6rem;
+  }
+}
+
+// ***
+// Projects
+
+// 1841 Break
+
+@media @1850 {
+  .project_div {
+    width: 28rem;
+    height: 28rem;
+
+    img {
+      width: 28rem;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
   }
 }

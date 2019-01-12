@@ -361,6 +361,20 @@ button {
   .modal_col img {
     height: 30rem;
   }
+  .modal_col .nested {
+    width: 80%;
+  }
+}
+@media (max-width: 1199px) {
+  .modal_col .nested {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .modal_col .nested a,
+  .modal_col button {
+    width: 8rem;
+  }
 }
 @media (max-width: 767px) {
   .modal_col {
@@ -383,6 +397,17 @@ button {
     display: none;
   }
 }
+@media (max-width: 615px) {
+  .modal_col h1 {
+    font-size: 4.5rem;
+  }
+  .modal_col h2 {
+    font-size: 1.75rem;
+  }
+  .modal_col p {
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 480px) {
   .modal_col h1 {
     font-size: 3.5rem;
@@ -403,10 +428,30 @@ button {
   width: 2.5rem;
   z-index: 2;
 }
+@media (max-width: 1850px) {
+  .exit_button {
+    margin-right: 6rem;
+  }
+}
+@media (max-width: 1700px) {
+  .exit_button {
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 1199px) {
+  .exit_button {
+    margin-right: 3rem;
+  }
+}
 @media (max-width: 991px) {
   .exit_button {
-    margin-right: 4rem;
-    width: 2rem;
+    margin-right: 2rem;
+    width: 2.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .exit_button {
+    margin-top: 3rem;
   }
 }
 @media (max-width: 480px) {
@@ -493,7 +538,6 @@ button {
 }
 .about_img h1 {
   padding-top: 1rem;
-  margin-bottom: -4rem;
   font-size: 2rem;
 }
 .embeded_vids {
@@ -503,6 +547,7 @@ button {
 .embeded_vids iframe {
   width: 310px;
   height: 170px;
+  margin: 0.5rem;
 }
 .life {
   flex-direction: column;
@@ -684,5 +729,21 @@ button {
 @media (max-width: 480px) {
   .about_text {
     padding-left: 6rem;
+  }
+}
+@media (max-width: 1850px) {
+  .project_div {
+    width: 28rem;
+    height: 28rem;
+  }
+  .project_div img {
+    width: 28rem;
+    height: auto;
+  }
+  .project_div h1 {
+    font-size: 3rem;
+  }
+  .project_div h2 {
+    font-size: 1.75rem;
   }
 }

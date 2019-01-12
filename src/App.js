@@ -9,17 +9,17 @@ class App extends Component {
       button: false,
       isTop: true,
       scrolled: false,
-      render: (
-        <Landing
-          renderA={this.compRenderA}
-          renderP={this.compRenderP}
-          renderL={this.compRenderL}
-          renderC={this.compRenderC}
-        />
-      ),
+      // render: (
+      //   <Landing
+      //     renderA={this.compRenderA}
+      //     renderP={this.compRenderP}
+      //     renderL={this.compRenderL}
+      //     renderC={this.compRenderC}
+      //   />
+      // ),
 
       // Development State
-      // render: <Contact />,
+      render: <Projects />,
     };
   }
 
@@ -86,6 +86,10 @@ class App extends Component {
     });
   };
 
+  notWorking = () => {
+    window.alert("I'm not working right now! (OvO') Check back later!");
+  };
+
   // Really Cheap, refactor this!!
 
   compRenderA = () => {
@@ -123,7 +127,7 @@ class App extends Component {
             <a href="https://www.linkedin.com/in/serrowxd/" target="_blank" rel="noopener noreferrer">
               <p>LinkedIn</p>
             </a>
-            <p>Resume</p>
+            <p onClick={this.notWorking}>Resume</p>
           </div>
         </div>
 
