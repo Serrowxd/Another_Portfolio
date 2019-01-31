@@ -4,6 +4,9 @@ Lookit that, I'm making ANOTHER portfolio!
 
 Offically Deployed -- https://kevintjolley.com/
 
+!! This does not currently work on Internet Explorer !!
+!! Currently a WIP Portfolio !!
+
 ---
 
 **NOTE - BEFORE RUNNING, MAKE SURE YOU INSTALL PACKAGES WITH YARN**
