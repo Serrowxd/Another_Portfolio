@@ -22,7 +22,7 @@ const Projects = props => {
       <div className="projects_container">
         <ProjectConst
           img={one}
-          alt="yeet"
+          alt="Once Daily"
           text="Once Daily"
           text_two="HTML / JQuery"
           text_three="LESS"
@@ -35,7 +35,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={two}
-          alt="yeet"
+          alt="IHLFG"
           text="I Hate LFG"
           text_two="React/Redux"
           text_three="Styled-Comps/LESS"
@@ -48,7 +48,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={three}
-          alt="yeet"
+          alt="Mandracchia Law"
           text="Mandracchia Law"
           text_two="React"
           text_three="Styled-Comps/LESS"
@@ -61,7 +61,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={four}
-          alt="yeet"
+          alt="Noted"
           text="Noted"
           text_two="React/Redux"
           text_three="Styled-Comps/LESS"
@@ -74,7 +74,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={five}
-          alt="yeet"
+          alt="Old Portfolio"
           text="Portfolio (Old)"
           text_two="React"
           text_three="LESS"
@@ -87,7 +87,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={six}
-          alt="yeet"
+          alt="Unfinished Portfolio"
           text="Portfolio (Unf)"
           text_two="HTML/JQuery"
           text_three="LESS"
@@ -100,7 +100,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={seven}
-          alt="yeet"
+          alt="Rcruit"
           text="Rcruit"
           text_two="React"
           text_three="Styled-Components"
@@ -113,7 +113,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={nine}
-          alt="yeet"
+          alt="SinForsaken"
           text="SinForsaken"
           text_two="HTML/JQuery"
           text_three="LESS"
@@ -126,7 +126,7 @@ const Projects = props => {
         />
         <ProjectConst
           img={eleven}
-          alt="yeet"
+          alt="Portfolio"
           text="Portfolio"
           text_two="React"
           text_three="LESS"
