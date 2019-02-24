@@ -11,6 +11,12 @@ Offically Deployed -- https://kevintjolley.com/
 
 **NOTE - BEFORE RUNNING, MAKE SURE YOU INSTALL PACKAGES WITH YARN**
 
+## Known Issues
+
+- Scrolling on the homepage will cause it to display the sidebar
+- Reactivity in the projects section causes issues at viewports lower than 1920x1080 or at a different aspect ratio.
+- Missing Contact & Life sections, will need to revamp these in the future.
+
 ## TO-DO
 
 - Reactive ~~
