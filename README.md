@@ -24,12 +24,18 @@ Offically Deployed -- https://kevintjolley.com/
   - Phones have slight overflow issues
 - Scrolling anywhere on the page causes the show-nav to fire (at lower reactive levels)
   - This can probably be fixed by just adjusting the overflow for the entire page.
+- LESS needs to be broken down into multiple files and imported properly.
+- Uneven numbers of projects will break the formatting in the projects section.
+- Set-up contact segment
+- Set-up or remove "Life" segment.
+- Add a section for work history ~ maybe something akin to a half-resume?
+- Add a section for Languages/Frameworks
+- Adjust background-images to be faster loading (smaller file size).
 
 ## Ideas
 
 - Projects Section - Separate them out into two categories?
-
   - Projects I've contributed to
   - Projects I've created
-
 - Projects Section - Include what I contributed to the projects, along with a quick tl;dr similar to what would be included in a resume.
+- Projects section needs to be more fluid, possibly smaller project buttons? Less padding obviously, resize should be fluid at every viewport.
