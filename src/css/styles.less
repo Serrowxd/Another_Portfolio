@@ -68,20 +68,6 @@ button {
 @orange: rgb(244, 155, 66);
 @white500: #9e9e9e;
 
-// Breakpoints
-@1850: ~'(max-width: 1850px)';
-@1700: ~'(max-width: 1700px)';
-@ultrawidescreen: ~'(max-width: 1600px)';
-@semiwidescreen: ~'(max-width: 1400px)';
-@widescreen: ~'(max-width: 1199px)';
-@desktop: ~'(max-width: 991px)';
-@890: ~'(max-width: 890px)';
-@tablet: ~'(max-width: 767px)';
-@615: ~'(max-width: 615px)';
-@phone: ~'(max-width: 480px)';
-@430: ~'(max-width: 430px)';
-@smallphone: ~'(max-width: 320px)';
-
 // !!! Breakpoints are handled in breakpoints.less @ bottom of page !!!
 
 // ***
@@ -353,23 +339,33 @@ button {
 // Projects
 // ***
 
+// .projects_container {
+//   // width: 100%;
+//   height: 100%;
+//   margin-top: 8rem;
+//   align-self: center;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   padding: 0.5rem;
+//   align-items: center;
+//   padding-top: 0;
+//   // background-color: @matblack;
+
+//   img {
+//     width: 100%;
+//     height: 38rem;
+//   }
+// }
+
 .projects_container {
   width: 100%;
   height: 100%;
-  margin-top: 8rem;
-  align-self: center;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 0;
-  // padding-left: 5.5rem;
-
-  // background-color: @matblack;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
   img {
-    width: auto;
-    height: 38rem;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -377,7 +373,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+  flex: 0 1 auto;
 
   img {
     transition: 0.25s;
@@ -738,5 +734,7 @@ button {
 .life {
   flex-direction: column;
 }
+
+// Imports
 
 @import 'styles/breakpoints.less';

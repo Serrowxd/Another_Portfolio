@@ -5,6 +5,20 @@
 // !!! Note that these are based on navigated component !!!
 // !!! Refer to comments to see component !!!
 
+// Breakpoints
+@1850: ~'(max-width: 1850px)';
+@1700: ~'(max-width: 1700px)';
+@ultrawidescreen: ~'(max-width: 1600px)';
+@semiwidescreen: ~'(max-width: 1400px)';
+@widescreen: ~'(max-width: 1199px)';
+@desktop: ~'(max-width: 991px)';
+@890: ~'(max-width: 890px)';
+@tablet: ~'(max-width: 767px)';
+@615: ~'(max-width: 615px)';
+@phone: ~'(max-width: 480px)';
+@430: ~'(max-width: 430px)';
+@smallphone: ~'(max-width: 320px)';
+
 // ***
 // Side Navigation (smol_nav)
 @media @widescreen {
@@ -230,29 +244,5 @@
 @media @phone {
   .about_text {
     padding-left: 6rem;
-  }
-}
-
-// ***
-// Projects
-
-// 1841 Break
-
-@media @1850 {
-  .project_div {
-    width: 28rem;
-    height: 28rem;
-
-    img {
-      width: 28rem;
-      height: auto;
-    }
-
-    h1 {
-      font-size: 3rem;
-    }
-    h2 {
-      font-size: 1.75rem;
-    }
   }
 }
