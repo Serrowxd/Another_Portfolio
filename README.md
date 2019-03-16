@@ -11,6 +11,8 @@ Offically Deployed -- https://kevintjolley.com/
 
 **NOTE - BEFORE RUNNING, MAKE SURE YOU INSTALL PACKAGES WITH YARN**
 
+**Possibly go through and rebuild a fully-mobile version of the page? It's not reactive or working with a reactive layout, so mobile phones should be redirected to a page that's built specifically for phones**
+
 ## Known Issues
 
 - Scrolling on the homepage will cause it to display the sidebar
