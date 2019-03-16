@@ -10,7 +10,7 @@ import four from '../assets/projects/noted.png';
 import five from '../assets/projects/port.png';
 import six from '../assets/projects/port2.png';
 import seven from '../assets/projects/rcruit.png';
-import eight from '../assets/projects/sin.png';
+import eight from '../assets/projects/wreck.png';
 import nine from '../assets/projects/sinnew.png';
 import ten from '../assets/projects/xuen.png';
 import eleven from '../assets/projects/anotherportf.png';
@@ -112,6 +112,19 @@ const Projects = props => {
           link_dep=""
         />
         <ProjectConst
+          img={eight}
+          alt="Wreck Room"
+          text="Wreck Room"
+          text_two="HTML/JQuery"
+          text_three="LESS"
+          text_four=""
+          modal_1="Record Label Concept Page"
+          modal_2="JavaScript"
+          modal_3="HTML, LESS, JQuery"
+          link_hub=""
+          link_dep=""
+        />
+        <ProjectConst
           img={nine}
           alt="SinForsaken"
           text="SinForsaken"
@@ -119,6 +132,19 @@ const Projects = props => {
           text_three="LESS"
           text_four=""
           modal_1="SinForsaken Guild Website"
+          modal_2="JavaScript"
+          modal_3="HTML, LESS, JQuery"
+          link_hub=""
+          link_dep=""
+        />
+        <ProjectConst
+          img={ten}
+          alt="Xuen Edits"
+          text="Xuen Edits"
+          text_two="HTML/JQuery"
+          text_three="LESS"
+          text_four=""
+          modal_1="Concept Page"
           modal_2="JavaScript"
           modal_3="HTML, LESS, JQuery"
           link_hub=""
