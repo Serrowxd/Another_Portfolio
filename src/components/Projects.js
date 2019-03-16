@@ -14,7 +14,6 @@ import eight from '../assets/projects/wreck.png';
 import nine from '../assets/projects/sinnew.png';
 import ten from '../assets/projects/xuen.png';
 import eleven from '../assets/projects/anotherportf.png';
-import twelve from '../assets/projects/yas.png';
 
 const Projects = props => {
   return (
