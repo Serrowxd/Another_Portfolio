@@ -27,6 +27,7 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100;
+      console.log(isTop);
       if (isTop !== this.state.isTop) {
         this.sideNavCheckerF();
         this.navScroll();
