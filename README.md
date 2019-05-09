@@ -33,6 +33,8 @@ Offically Deployed -- https://kevintjolley.com/
 - Add a section for work history ~ maybe something akin to a half-resume?
 - Add a section for Languages/Frameworks
 - Adjust background-images to be faster loading (smaller file size).
+- Rebuild side navigation at mobile to work as a pop-over, spawn from a hamburger in the main navigation, remove onscroll events and make navigation fully sticky.
+- Redo all the CSS
 
 ## Ideas
 

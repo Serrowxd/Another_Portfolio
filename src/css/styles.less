@@ -235,6 +235,7 @@ button {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   h1 {
     font-size: 12rem;
@@ -714,6 +715,251 @@ button {
   flex-direction: column;
 }
 
-// Imports
+// ***
+// Media Breakpoints
+// ***
 
-@import 'styles/breakpoints.less';
+// !!! Note that these are based on navigated component !!!
+// !!! Refer to comments to see component !!!
+
+// Breakpoints
+@1850: ~'(max-width: 1850px)';
+@1700: ~'(max-width: 1700px)';
+@ultrawidescreen: ~'(max-width: 1600px)';
+@semiwidescreen: ~'(max-width: 1400px)';
+@widescreen: ~'(max-width: 1199px)';
+@desktop: ~'(max-width: 991px)';
+@890: ~'(max-width: 890px)';
+@tablet: ~'(max-width: 767px)';
+@615: ~'(max-width: 615px)';
+@phone: ~'(max-width: 480px)';
+@430: ~'(max-width: 430px)';
+@smallphone: ~'(max-width: 320px)';
+
+// ***
+// Side Navigation (smol_nav)
+@media @widescreen {
+  .smol_nav {
+    width: 2.75rem;
+    height: 96.4%;
+    border-radius: 0;
+  }
+
+  .smol_buttons {
+    height: 95%;
+    align-self: center;
+  }
+}
+
+// ***
+// Landing
+@media @widescreen {
+  .jumbo {
+    h1 {
+      font-size: 10rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .jumbo_nav {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 750px;
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media @desktop {
+  .jumbo_nav {
+    width: 650px;
+  }
+}
+
+@media @890 {
+  .jumbo {
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media @tablet {
+  .jumbo {
+    h1 {
+      font-size: 7rem;
+    }
+    h2 {
+      font-size: 2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .jumbo_nav {
+    width: 550px;
+    border-top: none;
+
+    p {
+      font-size: 1.5rem;
+      border: 3px solid @white;
+      padding: 1rem;
+      width: 5rem;
+      text-align: center;
+
+      &:hover {
+        color: @white;
+        background-color: @orange;
+      }
+    }
+  }
+}
+
+@media @615 {
+  .jumbo {
+    h1 {
+      font-size: 5.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .jumbo_nav {
+    flex-wrap: wrap;
+    width: 20rem;
+
+    p {
+      margin: 0.5rem;
+    }
+  }
+}
+
+@media @phone {
+  .jumbo {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media @430 {
+  .jumbo h1 {
+    font-size: 4.25rem;
+  }
+}
+
+// ***
+// About
+@media @1700 {
+  .about_text {
+    justify-content: flex-start;
+    position: relative;
+    overflow: auto;
+  }
+  .about_img {
+    width: 40%;
+  }
+}
+
+@media @ultrawidescreen {
+  .about_container {
+    width: 95%;
+  }
+
+  .about_img {
+    width: 30%;
+    img {
+      width: 18rem;
+    }
+  }
+
+  .embeded_vids {
+    align-items: center;
+    flex-direction: column;
+
+    iframe {
+      margin: 1rem;
+    }
+  }
+}
+
+@media @desktop {
+  .about_container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .about_img {
+    display: none;
+  }
+
+  .embeded_vids {
+    display: none;
+  }
+
+  .about_text {
+    height: 100%;
+    width: 75%;
+    overflow: auto;
+    padding: 2rem;
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media @890 {
+  .about_container {
+    justify-content: baseline;
+  }
+
+  .about_text {
+    height: auto;
+  }
+}
+
+@media @tablet {
+  .about_text {
+    overflow: auto;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media @615 {
+  .about_text {
+    padding-left: 4rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media @phone {
+  .about_text {
+    padding-left: 6rem;
+  }
+}

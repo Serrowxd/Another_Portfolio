@@ -167,6 +167,7 @@ button {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .jumbo h1 {
   font-size: 12rem;
