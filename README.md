@@ -15,9 +15,11 @@ Offically Deployed -- https://kevintjolley.com/
 
 ## Known Issues
 
-- Scrolling on the homepage will cause it to display the sidebar
+- Scrolling on the homepage will cause it to display the sidebar, remove the ability to scroll on all devices from any page that are not set-up to scroll automatically.
+- Projects section being absolute positioned is causing the scrollY to not register, thus casuing the sidebar to not disappear.
 - Reactivity in the projects section causes issues at viewports lower than 1920x1080 or at a different aspect ratio.
 - Missing Contact & Life sections, will need to revamp these in the future.
+- Text inside the projects pop-up modal are not center justified when longer than normal.
 
 ## TO-DO
 
