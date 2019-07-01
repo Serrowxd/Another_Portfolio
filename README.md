@@ -13,6 +13,8 @@ Offically Deployed -- https://kevintjolley.com/
 
 **Possibly go through and rebuild a fully-mobile version of the page? It's not reactive or working with a reactive layout, so mobile phones should be redirected to a page that's built specifically for phones**
 
+!! Major To-Do -- Go through and redo the projects to be in chronological order, add if they are depricated/finished/unfinished, and add the github/deployment links. !!
+
 ## Known Issues
 
 - Scrolling on the homepage will cause it to display the sidebar, remove the ability to scroll on all devices from any page that are not set-up to scroll automatically.
