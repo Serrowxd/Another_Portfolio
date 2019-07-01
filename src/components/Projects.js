@@ -14,11 +14,25 @@ import eight from '../assets/projects/wreck.png';
 import nine from '../assets/projects/sinnew.png';
 import ten from '../assets/projects/xuen.png';
 import eleven from '../assets/projects/anotherportf.png';
+import pizzatime from '../assets/projects/pizzatime.png';
 
 const Projects = props => {
   return (
     <Fragment>
       <div className="projects_container">
+        <ProjectConst
+          img={pizzatime}
+          alt="Pizza Time"
+          text="Pizza Time"
+          text_two="Angular"
+          text_three="SCSS"
+          text_four=""
+          modal_1="A website used to demonstrate mastery of Angular"
+          modal_2="TypeScript/JavaScript"
+          modal_3="HTML, LESS, JQuery"
+          link_hub=""
+          link_dep=""
+        />
         <ProjectConst
           img={one}
           alt="Once Daily"
