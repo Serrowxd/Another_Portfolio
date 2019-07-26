@@ -30,11 +30,9 @@ class App extends Component {
       if (isTop) {
         nav.addClass('scrolled');
         this.sideNavCheckerF();
-        this.navScroll();
       } else {
         nav.removeClass('scrolled');
         this.sideNavChecker();
-        this.setState({ scrolled: false });
       }
     });
   }
@@ -43,10 +41,6 @@ class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.navScroll);
   }
-
-  navScroll = () => {
-    this.setState({ scrolled: true });
-  };
 
   // Click Handlers
   clickHandler = () => {
