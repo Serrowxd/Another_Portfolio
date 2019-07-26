@@ -7,7 +7,6 @@ class App extends Component {
     this.state = {
       // SideNavigation === Button
       button: false,
-      isTop: true,
       scrolled: false,
       render: (
         <Landing
@@ -16,7 +15,7 @@ class App extends Component {
           renderL={this.compRenderL}
           renderC={this.compRenderC}
         />
-      ),
+      )
 
       // Development State
       // render: <Projects />,
@@ -26,12 +25,14 @@ class App extends Component {
   // Navigation
   componentDidMount() {
     window.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 100;
-      console.log(isTop);
-      if (isTop !== this.state.isTop) {
+      const isTop = window.scrollY < 50;
+      let nav = document.getElementById('nav');
+      if (isTop) {
+        nav.addClass('scrolled');
         this.sideNavCheckerF();
         this.navScroll();
       } else {
+        nav.removeClass('scrolled');
         this.sideNavChecker();
         this.setState({ scrolled: false });
       }
@@ -83,7 +84,7 @@ class App extends Component {
           renderL={this.compRenderL}
           renderC={this.compRenderC}
         />
-      ),
+      )
     });
   };
 
@@ -117,15 +118,23 @@ class App extends Component {
     return (
       <div className="main_container">
         {/* Navigation */}
-        <div className={this.state.scrolled ? 'navigation scrolled' : 'navigation'} id="nav">
+        <div id="nav" className="navigation">
           <div className="nav_head">
             <p onClick={this.clickHandler}>K/J</p>
           </div>
           <div className="nav_items">
-            <a href="https://github.com/Serrowxd" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Serrowxd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p>Github</p>
             </a>
-            <a href="https://www.linkedin.com/in/serrowxd/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/serrowxd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p>LinkedIn</p>
             </a>
             <p onClick={this.notWorking}>Resume</p>
