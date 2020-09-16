@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import img from '../assets/kevin.jpg';
+import img from "../assets/kevin.jpg";
 
 const About = () => {
   return (

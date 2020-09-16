@@ -1,18 +1,53 @@
 // ***
+// Mixins
+// ***
+
+// Colors
+$black: #2f2f2f;
+$blacker: #232323;
+$matblack: #424242;
+$blackOP70: rgba(47, 47, 47, 0.7);
+$white: white;
+$blue: rgb(24, 215, 221);
+$orange: rgb(244, 155, 66);
+$white500: #9e9e9e;
+
+// ***
+// Media Breakpoints
+// ***
+
+// !!! Note that these are based on navigated component !!!
+// !!! Refer to comments to see component !!!
+
+// Breakpoints
+$S1850: 1850px;
+$S1700: 1700px;
+$ultrawidescreen: 1600;
+$semiwidescreen: 1400px;
+$widescreen: 1199px;
+$desktop: 991px;
+$S890: 890px;
+$tablet: 767px;
+$S615: 615px;
+$phone: 480px;
+$S430: 430px;
+$smallphone: 320px;
+
+// ***
 // Global
 // ***
 
 html {
-  font-family: 'Maven Pro', sans-serif;
-  background-color: @blacker;
+  font-family: "Maven Pro", sans-serif;
+  background-color: $blacker;
 
   // Temporary Color
-  color: @white;
+  color: $white;
 }
 
 div {
   display: flex;
-  transition: 0.25s;
+  transition: 0.15s;
   animation: fadein 1s forwards;
 }
 
@@ -44,26 +79,12 @@ button {
   font-size: 16px;
   cursor: pointer;
   color: white;
-  background-color: @orange;
+  background-color: $orange;
   box-shadow: 0 0 4px #999;
   outline: none;
 }
 
-// ***
-// Mixins
-// ***
-
-// Colors
-@black: #2f2f2f;
-@blacker: #232323;
-@matblack: #424242;
-@blackOP70: rgba(47, 47, 47, 0.7);
-@white: white;
-@blue: rgb(24, 215, 221);
-@orange: rgb(244, 155, 66);
-@white500: #9e9e9e;
-
-// !!! Breakpoints are handled in breakpoints.less @ bottom of page !!!
+// !!! Breakpoints are handled in breakpoints.less $ bottom of page !!!
 
 // ***
 // Keyframe Animations
@@ -185,7 +206,7 @@ button {
   z-index: 1;
 
   // Text Color
-  color: @white;
+  color: $white;
 
   .nav_head {
     justify-content: space-around;
@@ -200,10 +221,10 @@ button {
   // Navigation Font Size
   p {
     font-size: 1.5rem;
-    transition: 0.25s;
+    transition: 0.15s;
 
     &:hover {
-      color: @orange;
+      color: $orange;
       cursor: pointer;
     }
   }
@@ -211,7 +232,7 @@ button {
 
 .scrolled {
   position: fixed;
-  background-color: @blackOP70;
+  background-color: $blackOP70;
 }
 
 // ***
@@ -224,11 +245,11 @@ button {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: @black;
+  background-color: $black;
   opacity: 1;
 
   // Text Color
-  color: @white;
+  color: $white;
 
   // Background Image
   background-image: url(../assets/bkgtest2.png);
@@ -252,15 +273,15 @@ button {
   justify-content: space-around;
   margin-top: 3%;
   padding-top: 1%;
-  border-top: 3px solid @white;
+  border-top: 3px solid $white;
   border-radius: 10rem;
 
   p {
     font-size: 1.5rem;
-    transition: 0.25s;
+    transition: 0.15s;
 
     &:hover {
-      color: @orange;
+      color: $orange;
       cursor: pointer;
     }
   }
@@ -279,10 +300,10 @@ button {
   padding: 1rem;
   width: 3.5rem;
 
-  background-color: @blackOP70;
+  background-color: $blackOP70;
 
   height: 60%;
-  transition: 0.25s;
+  transition: 0.15s;
   border-radius: 0 2rem 2rem 0;
 
   animation: navigation_smol 1s forwards;
@@ -296,17 +317,17 @@ button {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  transition: 0.25s;
+  transition: 0.15s;
   text-align: center;
 
   p {
-    transition: 0.25s;
+    transition: 0.15s;
     padding: 0.5rem;
     border-radius: 2rem;
 
     &:hover {
-      background-color: @white;
-      color: @orange;
+      background-color: $white;
+      color: $orange;
       cursor: pointer;
     }
   }
@@ -322,7 +343,7 @@ button {
   width: 3.5rem;
 
   height: 60%;
-  transition: 0.25s;
+  transition: 0.15s;
 
   p {
     display: none;
@@ -356,7 +377,7 @@ button {
   flex: 0 1 auto;
 
   img {
-    transition: 0.25s;
+    transition: 0.15s;
   }
 
   &:hover {
@@ -376,13 +397,13 @@ button {
   h1,
   h2 {
     visibility: hidden;
-    transition: 0.25s;
+    transition: 0.15s;
   }
 
   h1 {
     font-size: 4.5rem;
     padding-bottom: 5rem;
-    color: @orange;
+    color: $orange;
   }
   h2 {
     font-size: 2.5rem;
@@ -408,7 +429,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(47, 47, 47, 0.9);
-  transition: 0.25s;
+  transition: 0.15s;
   z-index: 2;
 }
 
@@ -426,7 +447,7 @@ button {
   width: 100%;
   justify-content: space-around;
 
-  @media @tablet {
+  @media (max-width: $tablet) {
     height: 90%;
   }
 }
@@ -441,7 +462,7 @@ button {
   h1 {
     font-size: 7rem;
     margin-bottom: 0;
-    color: @orange;
+    color: $orange;
   }
 
   h2 {
@@ -463,7 +484,7 @@ button {
     justify-content: space-around;
   }
 
-  @media @semiwidescreen {
+  @media (max-width: $semiwidescreen) {
     h1 {
       font-size: 5rem;
     }
@@ -485,20 +506,20 @@ button {
     }
   }
 
-  @media @widescreen {
+  @media (max-width: $widescreen) {
     .nested {
       width: 100%;
     }
   }
 
-  @media @desktop {
+  @media (max-width: $desktop) {
     .nested a,
     button {
       width: 8rem;
     }
   }
 
-  @media @tablet {
+  @media (max-width: $tablet) {
     width: 100%;
     position: fixed;
     align-self: center;
@@ -522,7 +543,7 @@ button {
     }
   }
 
-  @media @615 {
+  @media (max-width: $S615) {
     h1 {
       font-size: 4.5rem;
     }
@@ -536,7 +557,7 @@ button {
     }
   }
 
-  @media @phone {
+  @media (max-width: $phone) {
     h1 {
       font-size: 3.5rem;
     }
@@ -561,28 +582,28 @@ button {
   width: 2.5rem;
   z-index: 2;
 
-  @media @1850 {
+  @media (max-width: $S1850) {
     margin-right: 6rem;
   }
 
-  @media @1700 {
+  @media (max-width: $S1700) {
     margin-right: 5rem;
   }
 
-  @media @widescreen {
+  @media (max-width: $widescreen) {
     margin-right: 3rem;
   }
 
-  @media @desktop {
+  @media (max-width: $desktop) {
     margin-right: 2rem;
     width: 2.5rem;
   }
 
-  @media @tablet {
+  @media (max-width: $tablet) {
     margin-top: 3rem;
   }
 
-  @media @phone {
+  @media (max-width: $phone) {
     margin-right: 0.75rem;
   }
 }
@@ -596,7 +617,7 @@ button {
   width: 100%;
   justify-content: center;
   align-items: center;
-  color: @white;
+  color: $white;
   font-size: 5rem;
 }
 
@@ -671,7 +692,7 @@ button {
     font-style: italic;
     font-weight: bold;
     font-size: 1.1rem;
-    color: @orange;
+    color: $orange;
   }
 }
 
@@ -685,7 +706,7 @@ button {
     width: 25rem;
     height: auto;
     border-radius: 100%;
-    transition: 0.25s;
+    transition: 0.15s;
   }
 
   h1 {
@@ -716,29 +737,12 @@ button {
 }
 
 // ***
-// Media Breakpoints
-// ***
-
-// !!! Note that these are based on navigated component !!!
-// !!! Refer to comments to see component !!!
-
 // Breakpoints
-@1850: ~'(max-width: 1850px)';
-@1700: ~'(max-width: 1700px)';
-@ultrawidescreen: ~'(max-width: 1600px)';
-@semiwidescreen: ~'(max-width: 1400px)';
-@widescreen: ~'(max-width: 1199px)';
-@desktop: ~'(max-width: 991px)';
-@890: ~'(max-width: 890px)';
-@tablet: ~'(max-width: 767px)';
-@615: ~'(max-width: 615px)';
-@phone: ~'(max-width: 480px)';
-@430: ~'(max-width: 430px)';
-@smallphone: ~'(max-width: 320px)';
+// ***
 
 // ***
 // Side Navigation (smol_nav)
-@media @widescreen {
+@media (max-width: $widescreen) {
   .smol_nav {
     width: 2.75rem;
     height: 96.4%;
@@ -753,7 +757,7 @@ button {
 
 // ***
 // Landing
-@media @widescreen {
+@media (max-width: $widescreen) {
   .jumbo {
     h1 {
       font-size: 10rem;
@@ -773,13 +777,13 @@ button {
   }
 }
 
-@media @desktop {
+@media (max-width: $desktop) {
   .jumbo_nav {
     width: 650px;
   }
 }
 
-@media @890 {
+@media (max-width: $S890) {
   .jumbo {
     h1 {
       font-size: 8rem;
@@ -790,7 +794,7 @@ button {
   }
 }
 
-@media @tablet {
+@media (max-width: $tablet) {
   .jumbo {
     h1 {
       font-size: 7rem;
@@ -807,20 +811,20 @@ button {
 
     p {
       font-size: 1.5rem;
-      border: 3px solid @white;
+      border: 3px solid $white;
       padding: 1rem;
       width: 5rem;
       text-align: center;
 
       &:hover {
-        color: @white;
-        background-color: @orange;
+        color: $white;
+        background-color: $orange;
       }
     }
   }
 }
 
-@media @615 {
+@media (max-width: $S615) {
   .jumbo {
     h1 {
       font-size: 5.5rem;
@@ -840,7 +844,7 @@ button {
   }
 }
 
-@media @phone {
+@media (max-width: $phone) {
   .jumbo {
     h1 {
       font-size: 5rem;
@@ -851,7 +855,7 @@ button {
   }
 }
 
-@media @430 {
+@media (max-width: $S430) {
   .jumbo h1 {
     font-size: 4.25rem;
   }
@@ -859,7 +863,7 @@ button {
 
 // ***
 // About
-@media @1700 {
+@media (max-width: $S1700) {
   .about_text {
     justify-content: flex-start;
     position: relative;
@@ -870,7 +874,7 @@ button {
   }
 }
 
-@media @ultrawidescreen {
+@media (max-width: $ultrawidescreen) {
   .about_container {
     width: 95%;
   }
@@ -892,7 +896,7 @@ button {
   }
 }
 
-@media @desktop {
+@media (max-width: $desktop) {
   .about_container {
     width: 100%;
     flex-direction: column-reverse;
@@ -918,7 +922,7 @@ button {
   }
 }
 
-@media @890 {
+@media (max-width: $S890) {
   .about_container {
     justify-content: baseline;
   }
@@ -928,7 +932,7 @@ button {
   }
 }
 
-@media @tablet {
+@media (max-width: $tablet) {
   .about_text {
     overflow: auto;
 
@@ -946,7 +950,7 @@ button {
   }
 }
 
-@media @615 {
+@media (max-width: $S615) {
   .about_text {
     padding-left: 4rem;
     h1 {
@@ -958,7 +962,7 @@ button {
   }
 }
 
-@media @phone {
+@media (max-width: $phone) {
   .about_text {
     padding-left: 6rem;
   }

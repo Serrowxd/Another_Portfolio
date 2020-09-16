@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Landing, About, Projects, Contact, Life } from './reducer';
+import React, { Component } from "react";
+import { Landing, About, Projects, Contact, Life } from "./reducer";
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,7 @@ class App extends Component {
           renderL={this.compRenderL}
           renderC={this.compRenderC}
         />
-      )
+      ),
 
       // Development State
       // render: <Projects />,
@@ -24,14 +24,14 @@ class App extends Component {
 
   // Navigation
   componentDidMount() {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       const isTop = window.scrollY < 50;
-      let nav = document.getElementById('nav');
+      let nav = document.getElementById("nav");
       if (isTop) {
-        nav.addClass('scrolled');
+        nav.addClass("scrolled");
         this.sideNavCheckerF();
       } else {
-        nav.removeClass('scrolled');
+        nav.removeClass("scrolled");
         this.sideNavChecker();
       }
     });
@@ -39,7 +39,7 @@ class App extends Component {
 
   // Navigation Display/Hide
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.navScroll);
+    window.removeEventListener("scroll", this.navScroll);
   }
 
   // Click Handlers
@@ -78,7 +78,7 @@ class App extends Component {
           renderL={this.compRenderL}
           renderC={this.compRenderC}
         />
-      )
+      ),
     });
   };
 
@@ -117,18 +117,10 @@ class App extends Component {
             <p onClick={this.clickHandler}>K/J</p>
           </div>
           <div className="nav_items">
-            <a
-              href="https://github.com/Serrowxd"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/Serrowxd" target="_blank" rel="noopener noreferrer">
               <p>Github</p>
             </a>
-            <a
-              href="https://www.linkedin.com/in/serrowxd/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/serrowxd/" target="_blank" rel="noopener noreferrer">
               <p>LinkedIn</p>
             </a>
             <p onClick={this.notWorking}>Resume</p>
@@ -139,7 +131,7 @@ class App extends Component {
         {this.state.render}
 
         {/* Left-Nav */}
-        <div className={this.state.button ? 'smol_nav' : 'hidden_nav'}>
+        <div className={this.state.button ? "smol_nav" : "hidden_nav"}>
           <div className="smol_buttons">
             <p onClick={this.setHome}>Home</p>
             <p onClick={this.compRender.bind(this, <About />)}>About</p>
