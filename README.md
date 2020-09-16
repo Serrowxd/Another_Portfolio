@@ -2,7 +2,7 @@
 
 Lookit that, I'm making ANOTHER portfolio!
 
-Offically Deployed -- https://kevintjolley.com/
+Offically Deployed -- https://kevintjolley.com/ // Deprecated //
 
 !! This does not currently work on Internet Explorer !!
 !! Currently a WIP Portfolio !!
@@ -30,15 +30,20 @@ Offically Deployed -- https://kevintjolley.com/
   - Phones have slight overflow issues
 - Scrolling anywhere on the page causes the show-nav to fire (at lower reactive levels)
   - This can probably be fixed by just adjusting the overflow for the entire page.
-- LESS needs to be broken down into multiple files and imported properly.
-- Uneven numbers of projects will break the formatting in the projects section.
+  - This functionality is deprecated, should be removed.
+- Uneven numbers of projects will break the formatting in the projects section. (Check this?)
 - Set-up contact segment
 - Set-up or remove "Life" segment.
-- Add a section for work history ~ maybe something akin to a half-resume?
 - Add a section for Languages/Frameworks
-- Adjust background-images to be faster loading (smaller file size).
+- Adjust background-images to be faster loading (smaller file size?).
 - Rebuild side navigation at mobile to work as a pop-over, spawn from a hamburger in the main navigation, remove onscroll events and make navigation fully sticky.
 - Redo all the CSS
+
+**New Items (2020)**
+
+- Add React Router, or some form of routing middleware to handle the transition between pages.
+- Add a loading animation (ThreeJS) when the page is not fully loaded (this includes assets). This would make it immensely easier to manage the load times without having to reduce the file sizes.
+-
 
 ## Ideas
 

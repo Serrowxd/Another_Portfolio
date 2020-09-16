@@ -87,6 +87,7 @@ class App extends Component {
   };
 
   // Really Cheap, refactor this!!
+  // Switch Statement, or just add router / loading animation
 
   compRenderA = () => {
     this.sideNavChecker();

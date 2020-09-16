@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment } from "react";
 
 class ProjectConst extends Component {
   constructor(props) {
@@ -47,11 +47,7 @@ class ProjectConst extends Component {
             </button>
             <div className="modal_row">
               <div className="modal_col">
-                {this.state.notes ? (
-                  <img src={this.props.img} alt={this.props.alt} />
-                ) : (
-                  <h1> Henlo (OvO") </h1>
-                )}
+                {this.state.notes ? <img src={this.props.img} alt={this.props.alt} /> : <h1> Henlo (OvO") </h1>}
               </div>
               <div className="modal_col">
                 <h1>{this.props.text}</h1>
@@ -60,18 +56,10 @@ class ProjectConst extends Component {
                 <p>{this.props.modal_3}</p>
 
                 <div className="nested">
-                  <a
-                    href={this.props.link_hub}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={this.props.link_hub} target="_blank" rel="noopener noreferrer">
                     <button>Github</button>
                   </a>
-                  <a
-                    href={this.props.link_dep}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={this.props.link_dep} target="_blank" rel="noopener noreferrer">
                     <button>Deployment</button>
                   </a>
                   <button>Project Notes</button>
