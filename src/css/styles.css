@@ -6,7 +6,7 @@ html {
 div {
   display: flex;
   transition: 0.15s;
-  animation: fadein 1s forwards; }
+  animation: fadein 0.75s forwards; }
 
 body {
   max-width: 1920px; }

@@ -10,8 +10,8 @@ const About = () => {
           <div className="about_text">
             <h1>- Kevin Jolley</h1>
             <p>
-              I'm a programmer based out of Houston, Texas. I'm very analytical, optimistic, and a massive
-              perfectionist. My primary focus is to become a well-rounded Software Engineer, covering both web and
+              I'm a programmer based out of Houston, Texas who prides myself on my analytics, optimism, and meticulous
+              eye for detail. My primary focus is to become a well-rounded Software Engineer, covering both web and
               program development.
             </p>
             <p>
