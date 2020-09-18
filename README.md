@@ -2,7 +2,9 @@
 
 Lookit that, I'm making ANOTHER portfolio!
 
-Offically Deployed -- https://kevintjolley.com/ // Deprecated //
+Deprecated Deployment -- https://kevintjolley.com/
+
+Development Deployment -- https://suspicious-montalcini-c0d006.netlify.app/
 
 !! This does not currently work on Internet Explorer !!
 !! Currently a WIP Portfolio !!
