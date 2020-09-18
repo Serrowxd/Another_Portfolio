@@ -49,16 +49,20 @@ const About = () => {
             <h1>What I listen to</h1>
             <div className="embeded_vids">
               <iframe
+                title="Music One"
                 src="https://www.youtube.com/embed/foVz8TM9J68"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                aria-hidden="true"
                 allowfullscreen
               />
 
               <iframe
+                title="Music Two"
                 src="https://www.youtube.com/embed/PZtLfvoL5HQ"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                aria-hidden="true"
                 allowfullscreen
               />
             </div>
