@@ -1,32 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import About from "./routes/About";
+import Projects from "./routes/Projects";
+import Landing from "./routes/Landing";
+import LeftNav from "./components/LeftNav";
 
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Landing} />
+      <Layout>
+        <Route exact path="/" component={Landing} />
+
+        <Route path="/about">
+          <About />
+          <LeftNav />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+          <LeftNav />
+        </Route>
+      </Layout>
     </Switch>
-  );
-};
-
-// Landing rendered here for simplicity
-const Landing = () => {
-  return (
-    <Layout>
-      {/* Jumbo */}
-      <div className="jumbo">
-        <h1>Kevin Jolley</h1>
-        <h2>JavaScript Web Developer</h2>
-
-        {/* Jumbo Nav */}
-        <div className="jumbo_nav">
-          <p onClick={props.renderA}>About</p>
-          <p onClick={props.renderP}>Projects</p>
-          <p onClick={props.renderL}>Life</p>
-          <p onClick={props.renderC}>Contact</p>
-        </div>
-      </div>
-    </Layout>
   );
 };
 
