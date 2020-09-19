@@ -54,3 +54,7 @@ Development Deployment -- https://suspicious-montalcini-c0d006.netlify.app/
   - Projects I've created
 - Projects Section - Include what I contributed to the projects, along with a quick tl;dr similar to what would be included in a resume.
 - Projects section needs to be more fluid, possibly smaller project buttons? Less padding obviously, resize should be fluid at every viewport.
+
+- Life section should contain blocked out sections that show personal achievements outside of code. Something to show initiative and drive in the different areas of my life, things that I have interest in, etc.
+  - Probably going to do this in the same way I did the projects section, using a small grid of sorts, then I'll have them click through to (possibly) router links?
+  - Having pop-over modals for each would make it a little weird, but I think it'll work out.
