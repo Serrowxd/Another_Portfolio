@@ -1,60 +1,70 @@
-# Another_Portfolio
+# Getting Started with Create React App
 
-Lookit that, I'm making ANOTHER portfolio!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Deprecated Deployment -- https://kevintjolley.com/
+## Available Scripts
 
-Development Deployment -- https://suspicious-montalcini-c0d006.netlify.app/
+In the project directory, you can run:
 
-!! This does not currently work on Internet Explorer !!
-!! Currently a WIP Portfolio !!
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**NOTE - BEFORE RUNNING, MAKE SURE YOU INSTALL PACKAGES WITH YARN**
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**Possibly go through and rebuild a fully-mobile version of the page? It's not reactive or working with a reactive layout, so mobile phones should be redirected to a page that's built specifically for phones**
+### `npm test`
 
-!! Major To-Do -- Go through and redo the projects to be in chronological order, add if they are depricated/finished/unfinished, and add the github/deployment links. !!
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Known Issues
+### `npm run build`
 
-- Scrolling on the homepage will cause it to display the sidebar, remove the ability to scroll on all devices from any page that are not set-up to scroll automatically.
-- Projects section being absolute positioned is causing the scrollY to not register, thus casuing the sidebar to not disappear.
-- Reactivity in the projects section causes issues at viewports lower than 1920x1080 or at a different aspect ratio.
-- Missing Contact & Life sections, will need to revamp these in the future.
-- Text inside the projects pop-up modal are not center justified when longer than normal.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## TO-DO
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Reactive ~~
-  - About height is non-effective in some cases
-  - Phones have slight overflow issues
-- Scrolling anywhere on the page causes the show-nav to fire (at lower reactive levels)
-  - This can probably be fixed by just adjusting the overflow for the entire page.
-  - This functionality is deprecated, should be removed.
-- Uneven numbers of projects will break the formatting in the projects section. (Check this?)
-- Set-up contact segment
-- Set-up or remove "Life" segment.
-- Add a section for Languages/Frameworks
-- Adjust background-images to be faster loading (smaller file size?).
-- Rebuild side navigation at mobile to work as a pop-over, spawn from a hamburger in the main navigation, remove onscroll events and make navigation fully sticky.
-- Redo all the CSS
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**New Items (2020)**
+### `npm run eject`
 
-- Add React Router, or some form of routing middleware to handle the transition between pages.
-- Add a loading animation (ThreeJS) when the page is not fully loaded (this includes assets). This would make it immensely easier to manage the load times without having to reduce the file sizes.
--
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Ideas
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Projects Section - Separate them out into two categories?
-  - Projects I've contributed to
-  - Projects I've created
-- Projects Section - Include what I contributed to the projects, along with a quick tl;dr similar to what would be included in a resume.
-- Projects section needs to be more fluid, possibly smaller project buttons? Less padding obviously, resize should be fluid at every viewport.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- Life section should contain blocked out sections that show personal achievements outside of code. Something to show initiative and drive in the different areas of my life, things that I have interest in, etc.
-  - Probably going to do this in the same way I did the projects section, using a small grid of sorts, then I'll have them click through to (possibly) router links?
-  - Having pop-over modals for each would make it a little weird, but I think it'll work out.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
