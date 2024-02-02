@@ -1,5 +1,7 @@
 # Another_Portfolio
 
+**This readme is deprecated and will live on the v1 branch, ref to the main readme for new updates**
+
 Lookit that, I'm making ANOTHER portfolio!
 
 Deprecated Deployment -- https://kevintjolley.com/
