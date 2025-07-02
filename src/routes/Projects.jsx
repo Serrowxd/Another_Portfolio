@@ -1,22 +1,22 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { ProjectConst } from '../reducer';
+import { ProjectConst } from "../reducer";
 
 // Img Imports
-import one from '../assets/projects/yas.png';
-import two from '../assets/projects/lfg.png';
-import three from '../assets/projects/manlaw.png';
-import four from '../assets/projects/noted.png';
-import five from '../assets/projects/port.png';
-import six from '../assets/projects/port2.png';
-import seven from '../assets/projects/rcruit.png';
-import eight from '../assets/projects/wreck.png';
-import nine from '../assets/projects/sinnew.png';
-import ten from '../assets/projects/xuen.png';
-import eleven from '../assets/projects/anotherportf.png';
-import pizzatime from '../assets/projects/pizzatime.png';
+import one from "../assets/projects/yas.png";
+import two from "../assets/projects/lfg.png";
+import three from "../assets/projects/manlaw.png";
+import four from "../assets/projects/noted.png";
+import five from "../assets/projects/port.png";
+import six from "../assets/projects/port2.png";
+import seven from "../assets/projects/rcruit.png";
+import eight from "../assets/projects/wreck.png";
+import nine from "../assets/projects/sinnew.png";
+import ten from "../assets/projects/xuen.png";
+import eleven from "../assets/projects/anotherportf.png";
+import pizzatime from "../assets/projects/pizzatime.png";
 
-const Projects = props => {
+const Projects = (props) => {
   return (
     <Fragment>
       <div className="projects_container">

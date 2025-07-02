@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-const Landing = props => {
+const Landing = (props) => {
   return (
     <Fragment>
       {/* Jumbo */}

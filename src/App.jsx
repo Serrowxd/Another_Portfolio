@@ -118,10 +118,18 @@ class App extends Component {
             <p onClick={this.clickHandler}>K/J</p>
           </div>
           <div className="nav_items">
-            <a href="https://github.com/Serrowxd" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Serrowxd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p>Github</p>
             </a>
-            <a href="https://www.linkedin.com/in/serrowxd/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/serrowxd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p>LinkedIn</p>
             </a>
             <p onClick={this.notWorking}>Resume</p>
