@@ -1,4 +1,10 @@
-# Another_Portfolio
+# LEGACY CODE - Another_Portfolio
+
+This is a 2020 representation of my original portfolio. This has been refreshed, and will be deployed for display in my new 2025 portfolio.
+
+Everything below here is legacy readme content.
+
+---
 
 Lookit that, I'm making ANOTHER portfolio!
 
